@@ -1,4 +1,4 @@
-name: GitHub Actions Build and Deploy
+name: Build and Deploy
 on:
   push:
     branches:
@@ -7,17 +7,17 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
 
-      - name: Install and Build
+        # 打包代码，dumi的打包命令
+      - name: Install and Build 🔧
         run: |
           npm install
           npm run docs:build
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          folder: build
-          branch: gh-pages
-          token: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages # 部署分支
+          folder: docs-dist #dumi打包成功置换的文件夹
