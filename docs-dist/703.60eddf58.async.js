@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkIceLeach_github_io=self.webpackChunkIceLeach_github_io||[]).push([[703],{93703:function(i,o,n){n.r(o),n.d(o,{Foo:function(){return c}});var s=n(67294),t=n(85893),u=function(h){return(0,t.jsx)("h4",{children:h.title})},c=u}}]);
