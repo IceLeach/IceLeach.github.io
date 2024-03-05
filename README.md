@@ -1,19 +1,13 @@
-# IceLeach.github.io
+# 冰沥的记忆回廊
 
 [![NPM version](https://img.shields.io/npm/v/IceLeach.github.io.svg?style=flat)](https://npmjs.org/package/IceLeach.github.io)
 [![NPM downloads](http://img.shields.io/npm/dm/IceLeach.github.io.svg?style=flat)](https://npmjs.org/package/IceLeach.github.io)
 
-My personal website
+## ✨ Features
 
-## Usage
+记录平时生活和工作中的所见所闻、学习笔记，以及一切想记录的东西
 
-TODO
-
-## Options
-
-TODO
-
-## Development
+## ⌨️ Development
 
 ```bash
 # install dependencies
@@ -34,7 +28,3 @@ $ yarn run docs:build
 # check your project for potential problems
 $ yarn run doctor
 ```
-
-## LICENSE
-
-MIT

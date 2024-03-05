@@ -1,7 +1,8 @@
 {
   "name": "IceLeach.github.io",
   "version": "0.0.1",
-  "description": "My personal website",
+  "description": "冰沥的记忆回廊",
+  "homepage": "https://iceleach.github.io",
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

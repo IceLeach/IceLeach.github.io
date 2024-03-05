@@ -1,0 +1,22 @@
+.home-description{
+  width: fit-content;
+  font-size: 24px;
+  text-align: start;
+  margin: 0 auto;
+}
+
+.home-sub-description{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.home-image{
+  width: fit-content;
+  font-size: 14px;
+  text-align: start;
+  margin: 0 auto;
+}
+
+.home-image>img{
+  width: 400px;
+}
