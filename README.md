@@ -1,8 +1,5 @@
 # 冰沥的记忆回廊
 
-[![NPM version](https://img.shields.io/npm/v/IceLeach.github.io.svg?style=flat)](https://npmjs.org/package/IceLeach.github.io)
-[![NPM downloads](http://img.shields.io/npm/dm/IceLeach.github.io.svg?style=flat)](https://npmjs.org/package/IceLeach.github.io)
-
 ## ✨ Features
 
 记录平时生活和工作中的所见所闻、学习笔记，以及一切想记录的东西
