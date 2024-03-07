@@ -5,10 +5,10 @@ nav:
 # group:
 #   title: 介绍
 #   order: 0
-title: 搭建自己的文档站
+title: 搭建文档站
 ---
 
-# 搭建自己的文档站
+# 搭建文档站
 
 用 dumi 和 github pages 来搭建一个文档型个人网站。
 
@@ -34,13 +34,13 @@ $ node -v
 
 如果不想用 Node.js 自带的 npm ，建议提前先准备好。
 
-***注：这个文档里我会使用 yarn 来演示***
-
 ```bash
 $ npm instal -g yarn # 安装yarn
 # 或
 $ npm instal -g pnpm # pnpm
 ```
+
+**注：接下来我会使用 yarn 来演示**
 
 ### 编辑器/IDE
 
@@ -90,7 +90,7 @@ $ yarn start
 
 ## 部署到 Github Pages
 
-github 提供了免费的静态站点托管服务，部署到 Github Pages 是一个很好的选择。
+github 提供了免费的静态站点托管服务，部署到 Github Pages 非常省事。
 
 ### 准备一个仓库并部署
 
@@ -103,12 +103,12 @@ github 提供了免费的静态站点托管服务，部署到 Github Pages 是�
 
 ![示例](/images/2024-03-06-3.png)
 
-4. 输入仓库名称，格式为`{用户名}.github.io`，选择`Public`公开仓库，最后点击`Create repository`按钮创建仓库。**（我这里是因为已经创建过了，所以会有红字警告）**
+1. 输入仓库名称，格式为`{用户名}.github.io`，选择`Public`公开仓库，最后点击`Create repository`按钮创建仓库。**（我这里是因为之前创建过，所以会有红字警告）**
 
 ![示例](/images/2024-03-06-4.png)
 
 5. 按照提示将本地的项目提交到仓库。
-6. 创建一个名为`gh-pages`分支。**（名字可以随便取，用来存放构建后的产物）**
+6. 创建一个名为`gh-pages`分支。**（名字可以随便取，用来部署打包后的产物）**
 7. 本地打包项目：
 
 ```bash
@@ -127,6 +127,10 @@ $ yarn build
 ### 自动化
 
 上面我们通过手动的方式完成了部署，缺点是每次更新都要手动打包然后把产物放到`gh-pages`分支上去，接下来把这一过程自动化，这一过程可以直接替换掉上面的第7步和第8步。
+
+先把自动化的权限开放出来，选到`Actions`里的`General`，权限的地方选择`Read and write permissions`,再点一下`save`。
+
+![示例](/images/2024-03-07-1.png)
 
 切换到你的主分支，创建`.github/workflows/ci.yml`文件，以下是一个示例。**（建议稍微理解一下）**
 
