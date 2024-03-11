@@ -5,10 +5,10 @@ nav:
 # group:
 #   title: 介绍
 #   order: 0
-title: 永久激活Windows
+title: 永久激活 Windows
 ---
 
-# 永久激活Windows
+# 永久激活 Windows
 
 ## 背景
 
