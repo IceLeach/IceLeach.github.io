@@ -10,4 +10,6 @@ export default defineConfig({
       github: 'https://github.com/IceLeach/IceLeach.github.io',
     },
   },
+  extraRemarkPlugins: ['remark-math'],
+  extraRehypePlugins: ['rehype-katex'],
 });
